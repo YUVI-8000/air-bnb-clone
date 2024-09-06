@@ -73,10 +73,14 @@ const sessionOption = {
     },
 };
 
-// app.get("/",(req,res)=>{
-//     res.send("root is working")
-// });
-
+app.get("/",(req,res)=>{
+    res.redirect("/listings");
+});
+//search
+// app.post("/search",(req,res)=>{
+//     let list = req.body.data;
+//     console.log(list);
+// })
 
 app.use(session(sessionOption));
 app.use(flash());
