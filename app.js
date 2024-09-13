@@ -73,9 +73,9 @@ const sessionOption = {
     },
 };
 
-app.get("/",(req,res)=>{
-    res.redirect("/listings");
-});
+// app.get("/",(req,res)=>{
+//     res.redirect("/listings");
+// });
 //search
 // app.post("/search",(req,res)=>{
 //     let list = req.body.data;
