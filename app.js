@@ -97,7 +97,6 @@ app.use((req,res,next)=>{
     res.locals.success = req.flash("success");
     res.locals.error = req.flash("error");
     res.locals.currUser= req.user;
-    // console.log(res.locals.success);
     next();
 });
 
@@ -158,9 +157,7 @@ app.all("*",(req,res,next)=>{
 //expreserr
 app.use((err, req, res, next) =>{
     let {statusCode=500, message="SOMETHING WENT WRONG!"} = err;
-    // res.status(statusCode).send(message);
     res.render("error.ejs", {err});
-    // res.status(statusCode).render("error.ejs",{message});
 });
 
 
