@@ -1,6 +1,3 @@
-Here's a draft of a `README.md` for your project:
-
-```markdown
 # Wander Lust 🌍
 
 Wander Lust is a full-stack web application for managing and exploring listings (similar to Airbnb). It includes features such as user authentication, authorization, review management, and responsive UI built using EJS templates.
@@ -104,6 +101,3 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License 📄
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-Replace placeholders like `<Your MongoDB Atlas URL>` and GitHub repository link with actual details specific to your project. Add screenshots or additional information as needed.
