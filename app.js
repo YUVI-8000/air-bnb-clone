@@ -124,7 +124,12 @@ const validateReview = (req,res,next) =>{
         next();
     }
 };
-
+//search
+app.post("/search",wrapAsync(async (req, res) => {
+    let data = req.body.data;
+    console.log(data);
+    res.redirect("/listings");
+}))
 //review
 //post route
 app.post("/listings/:id/reviews",isLoggedIn, validateReview,wrapAsync(async(req,res)=>{
